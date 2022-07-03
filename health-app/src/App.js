@@ -1,31 +1,28 @@
 
+import React from 'react';
 import './App.css';
-import Main from  './components/Main';
+import Diabetes from  './components/Diabetes/Diabetes';
+import Footer from './components/Footer/Footer';
+import Nav from './components/Navbar/Nav'
+import Home from './components/Home/Home'
+//import Login from './components/Login/Login'
+import {BrowserRouter as Router, Switch,Route, Routes}from 'react-router-dom';
+
 
 export default function App() {
   return (
-    <div className="App">
-      <Main/>
-      <Footer /> 
-    </div>
+    <Router>
+      
+      <div className="App">
+        <Nav/>
+        <Routes>
+          <Route path = "/home" element={<Home/>}/>
+          <Route exact path = "/diabetes" element={<Diabetes/>}/>
+        </Routes>
+        <Footer/>
+      </div>
+   
+    </Router>
+    
   );
 }
-const Footer = () => {
-  return (
-      <p className="text-center" style={ FooterStyle }>Designed & coded by <a href="https://github.com/Adithya-A-S" target="_blank" rel="noopener noreferrer">Adithya A S</a></p>
-  )
-}
-
-const FooterStyle = {
-  background: "#000000",
-  fontSize: ".8rem",
-  color: "white",
-  position: "absolute",
-  bottom: 0,
-  padding: "1rem",
-  margin: 0,
-  width: "100%",
-  opacity: ".5"
-}
-
-
