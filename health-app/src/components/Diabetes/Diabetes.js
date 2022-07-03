@@ -1,13 +1,14 @@
-import './Main.css'
-import { useState } from 'react'
+import './Diabetes-page.css'
+import { useState,useEffect } from 'react'
 import axios from 'axios'
 
-function Main(){
+const Diabetes = () =>{
 
     const [glucose, setGlucose] = useState('')
     const [bp, setBp] = useState('')
     const [insulin, setInsulin] = useState('')
     const [bmi, setBmi] = useState('')
+    const [outcome, setOutcome] = useState('');
    
   
     const handleSubmit = (e) => {
@@ -20,6 +21,7 @@ function Main(){
           const data = res.data.data
           const parameters = JSON.stringify(params)
           const msg = `Prediction: ${data.prediction}\nInterpretation: ${data.interpretation}\nParameters: ${parameters}`
+          setOutcome(data.prediction)
           alert(msg)
           reset()
         })
@@ -96,20 +98,13 @@ function Main(){
               />
             </div>
 
-            
-            
-
-            
-    
             <div className="glass__form__group">
               <button type="submit" className="glass__form__btn">
-                Submit
+                Predict
               </button>
             </div>
           </form>
         </div>
-      )
-
+ );
 }
-
-export default Main
+export default Diabetes;
