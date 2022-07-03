@@ -33,14 +33,15 @@ class person(BaseModel):
     bp: int
     insulin: int
     bmi: float
-    dpf: int
+
+    
 
 
 # Setting up the home route
 @app.get("/")
 def read_root():
     return {"data": "Welcome to online diabetes prediction model"}
-
+dpf = [0.3]
 # Setting up the prediction route
 @app.post("/prediction/")
 async def get_predict(data: person):
@@ -49,9 +50,9 @@ async def get_predict(data: person):
         data.bp,
         data.insulin,
         data.bmi,
-        data.dpf
-    ]]
 
+    ]]
+    sample = [sample[0]+[0.3]]
     patient = model.predict(sample).tolist()[0]
 
     return {
