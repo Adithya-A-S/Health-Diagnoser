@@ -15,7 +15,7 @@ function Main(){
       const params = { glucose, bp, insulin, bmi }
   
       axios
-        .post('http://localhost:8080/prediction', params)
+        .post('http://127.0.0.1:5000/prediction', params)
         .then((res) => {
           const data = res.data.data
           const parameters = JSON.stringify(params)
