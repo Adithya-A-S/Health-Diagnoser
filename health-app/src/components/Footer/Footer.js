@@ -8,7 +8,7 @@ const Footer = () => {
   }
   
   const FooterStyle = {
-    background: "black",
+    background: "#161c2d",
     fontSize: ".8rem",
     color: "white",
     position: "absolute",
@@ -16,6 +16,6 @@ const Footer = () => {
     padding: "1rem",
     margin: 0,
     width: "100%",
-    opacity: ".5"
+    
   }
 export default Footer;
