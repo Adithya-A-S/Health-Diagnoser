@@ -11,7 +11,7 @@ const Footer = () => {
     background: "#161c2d",
     fontSize: ".8rem",
     color: "white",
-    position: "absolute",
+    position: "fixed",
     bottom: 0,
     padding: "1rem",
     margin: 0,

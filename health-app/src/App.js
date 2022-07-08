@@ -8,6 +8,8 @@ import Home from './components/Home/Home'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Login from './components/Login/Login'
 import {BrowserRouter as Router, Switch,Route, Routes}from 'react-router-dom';
+import Dresult from './components/Diabetes/dresult';
+import Temp from './components/Diabetes/temp'
 
 
 
@@ -18,9 +20,11 @@ export default function App() {
       <div className="App">
         <Nav/>
         <Routes>
-          <Route path = "/home" element={<Home/>}/>
+          <Route path = "/" element={<Home/>}/>
           <Route exact path = "/diabetes" element={<Diabetes/>}/>
           <Route exact path = "/login" element={<Login/>}/>
+          <Route exact path = "/dresult" element={<Dresult/>}/>
+          <Route exact path = "/temp" element={<Temp/>}/>
         </Routes>
         <Footer/>
       </div>

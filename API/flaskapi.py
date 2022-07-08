@@ -19,6 +19,7 @@ def home():
 def predict():
     payload = request.get_json(force=True)
     prediction = model.predict([np.array(list(payload.values())+[0.3])]).tolist()[0]
+
     output = {
         "data": {
             'prediction': prediction,
