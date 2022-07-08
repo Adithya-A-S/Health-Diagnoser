@@ -2,4 +2,4 @@
 <br>
 <p>-> predicts if a person will have diabetes on future</p>
 <p> site under development </p>
-<a href="url">Site Link</a>
+<a href="https://aihealthdiagnoser.netlify.app/">Site Link</a>
