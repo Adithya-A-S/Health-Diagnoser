@@ -10,7 +10,7 @@ export default function Diabetes() {
   const [insulin, setInsulin] = useState('')
   const [bmi, setBmi] = useState('')
   
-
+  const apilink = "http://127.0.0.1:5000";
   const [predictionData, setPredictionData] = useState({})
 
   const [loadingStatus, setLoadingStatus] = useState(false)
@@ -18,8 +18,9 @@ export default function Diabetes() {
     const request = {glucose,bp,insulin,bmi}
     const handleSubmi = async () => {
       setLoadingStatus(true)
+      const endpoint = '/prediction'
       axios
-        .post('http://127.0.0.1:5000/prediction', request)
+        .post(apilink+endpoint, request)
         .then((response) => {
           const responseData = response.data.data
           setPredictionData(responseData)
@@ -69,7 +70,7 @@ else if(loadingStatus) {
 
 }
 else return (
-  <div className='main'>
+  <div className='container'>
     <section id="cover" className="min-vh-100">
     <div id="cover-caption">
         <div className=" align-items-center ">
