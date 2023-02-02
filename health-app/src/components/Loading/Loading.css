@@ -1,4 +1,9 @@
 .loading_image {
     width: 50%;
     height: 50%;
+    align-items: center;
+  }
+  .container-fluid{
+    background:linear-gradient(90deg, rgba(8,8,11,1) 15%, rgba(8,8,11,0.9504719368216037) 36%, rgba(1,1,14,0.9728809004070378) 78%, rgba(15,0,8,0.9924887435442927) 86%);
+    min-height: 100vh;
   }

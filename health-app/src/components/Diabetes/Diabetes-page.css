@@ -6,6 +6,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    
 }
  
  .hx4 {
@@ -15,7 +16,7 @@
     color: white;
   }
   
- 
+
   
   .glass__form__input {
     width: 100%;
@@ -33,19 +34,19 @@
   
   
   .glass__form__btn {
-    background: #ffffff;
+    background: black ;
     border: 1px solid #ea2828;
     border: none;
     outline: none;
     padding: 10px 15px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: white;
     cursor: pointer;
   }
   
   .glass__form__btn:hover {
-    background: black;
-    color: #ffffff;
+    background:white;
+    color:black;
     transition: all ease-in-out 0.3s;
   }
   
@@ -73,7 +74,8 @@ form:before {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background: transparent;
+    background-color: rgb(73, 70, 70);
     z-index: -1;
     border-radius: 10px;
 }
@@ -101,6 +103,10 @@ form:before {
   ::placeholder {
     /* Most modern browsers support this now. */
     color: #000;
+  }
+  .container_dbs{
+    background: linear-gradient(90deg, rgba(8,8,11,1) 15%, rgba(8,8,11,0.9504719368216037) 36%, rgba(1,1,14,0.9728809004070378) 78%, rgba(15,0,8,0.9924887435442927) 86%);
+    min-width: 90vh;
   }
 
 

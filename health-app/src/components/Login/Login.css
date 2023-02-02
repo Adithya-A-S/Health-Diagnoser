@@ -1,0 +1,88 @@
+.logreg-forms{
+    
+    color: white;
+    min-height: 90vh;
+    background: linear-gradient(90deg, rgba(8,8,11,1) 15%, rgba(8,8,11,0.9504719368216037) 36%, rgba(1,1,14,0.9728809004070378) 78%, rgba(15,0,8,0.9924887435442927) 86%);
+
+
+}
+
+body{
+
+    background-color: #000;
+  }
+  
+  
+  .card{
+  
+    width: 400px;
+    border:none;
+  
+  }
+  
+  .nav{
+    background: red;
+  }
+  
+  
+  
+  
+  .btn-dark {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+  }
+  
+  
+  .btn-dark:hover {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+  }
+  
+  
+  .nav-pills{
+    display: table;
+  
+    width:100%;
+  }
+  
+  .nav-pills .nav-link {
+      border-radius: 0px;
+      color: #fff;
+    
+  
+  }
+  
+  .nav-item{
+        display: table-cell;
+         background:grey;
+         color: white;
+
+  }
+  
+  
+  .form{
+  
+    padding: 10px;
+        height: 300px;
+  }
+  
+  .form input{
+  
+    margin-bottom: 12px;
+    border-radius: 3px;
+  }
+  
+  
+  .form input:focus{
+  
+    box-shadow: none;
+  }
+  
+  
+  .form button{
+  
+    margin-top: 20px;
+    background-color: grey;
+  }

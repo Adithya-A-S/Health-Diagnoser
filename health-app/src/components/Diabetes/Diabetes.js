@@ -40,7 +40,7 @@ if(predictionData.interpretation) {
 
       const outputComponent = (
        
-<div className='container'>
+<div className='container_dbs'>
 <section id="cover" className="min-vh-100">
 <div id="cover-caption">
     <div className=" align-items-center ">
@@ -70,10 +70,10 @@ else if(loadingStatus) {
 
 }
 else return (
-  <div className='container'>
+  <div className='container_dbs'>
     <section id="cover" className="min-vh-100">
     <div id="cover-caption">
-        <div className=" align-items-center ">
+        <div className="align-items-center ">
             <div className="row text-white">
                 <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
                     <h2>Diabetes Predictor</h2>
