@@ -10,6 +10,7 @@ import Login from './components/Login/Login'
 import {BrowserRouter as Router, Switch,Route, Routes}from 'react-router-dom';
 import Dresult from './components/Diabetes/dresult';
 import Temp from './components/Diabetes/temp'
+import Register from './components/Login/Register';
 
 
 
@@ -25,6 +26,9 @@ export default function App() {
           <Route exact path = "/login" element={<Login/>}/>
           <Route exact path = "/dresult" element={<Dresult/>}/>
           <Route exact path = "/temp" element={<Temp/>}/>
+          <Route exact path = "/login" element={<Login/>}/>
+          <Route exact path = "/Register" element={<Register/>}/>
+
         </Routes>
         <Footer/>
       </div>

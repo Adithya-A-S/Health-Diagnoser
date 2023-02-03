@@ -13,13 +13,27 @@ body{
   }
   
   
-  .card{
+  .cd{
   
     width: 400px;
     height: 270px;
     border:none;
+    background: transparent;
+    background-color: #fff;
   
   }
+
+  .rd{
+  
+    width: 380px;
+    height: 350px;
+    border:none;
+    background: transparent;
+    background-color: #fff;
+    
+  
+  }
+  
   
   
   .message{
