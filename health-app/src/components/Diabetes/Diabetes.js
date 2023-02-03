@@ -41,7 +41,7 @@ if(predictionData.interpretation) {
       const outputComponent = (
        
 <div className='container_dbs'>
-<section id="cover" className="min-vh-100">
+<section id="card  card_dbts" className="min-vh-100">
 <div id="cover-caption">
     <div className=" align-items-center ">
         <div className="row text-white">
@@ -70,15 +70,14 @@ else if(loadingStatus) {
 
 }
 else return (
-  <div className='container_dbs'>
-    <section id="cover" className="min-vh-100">
-    <div id="cover-caption">
-        <div className="align-items-center ">
-            <div className="row text-white">
-                <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+
+  <div className="dbts-form d-flex justify-content-center align-items-center ">
+  <div className="card od">
+      
+    <div className="form p-2">
                     <h2>Diabetes Predictor</h2>
                     <div className="px-2">
-                        <form action="" className="justify-content-center">
+                        <form action="">
                             <div className="form-group">
                                 <label className="sr-only">Glucose</label>
                                 <input
@@ -142,13 +141,17 @@ else return (
                               </button>
                            
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </div>
+                        </div>
+
     </div>
-</section>
-</div>
+  </div>
+
+
+
+
+
+ 
   )
 }
 
